@@ -1,0 +1,401 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    width:100%;
+    min-height:100%;
+}
+
+body {
+    background: url(../images/bg1.jpg) no-repeat;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    font-family: "宋体";
+}
+
+.clearfix:after{
+    clear:both;
+    display: table;
+    content: '';
+}
+.left{
+    float:left;
+}
+.right{
+    float:right
+}
+.container {
+    position: absolute;
+    -webkit-transform: perspective(1000px);
+    -moz-transform: perspective(1000px);
+    -ms-transform: perspective(1000px);
+    -o-transform: perspective(1000px);
+    transform: perspective(1000px);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin:  center center;
+    -moz-transform-origin: center center ;
+    -ms-transform-origin: center center ;
+    -o-transform-origin: center center ;
+    transform-origin: center center ;
+    width: 60%;
+    height: 60%;
+    left: 20%;
+    top: 20%;
+}
+
+.element, .js_current_dom {
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -ms-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-color: #fff;
+}
+
+.btn_circle {
+    height: 100px;
+    width: 100px;
+    /*border:20px solid #eee;*/
+    line-height: 100px;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #f00;
+    cursor: pointer;
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    z-index: 9;
+    color:#fff;
+    -webkit-transition:all 0.7s linear;
+    -moz-transition:all 0.7s linear;
+    -ms-transition:all 0.7s linear;
+    -o-transition:all 0.7s linear;
+    transition:all 0.7s linear;
+}
+.btn_circle:hover{
+    background-color: darkorange;
+    border-color: #fff;
+}
+.btn_start{
+    position: static;
+    margin:25px auto 0 auto;
+}
+.mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    z-index: 999;
+}
+
+.lucky_icon {
+    height: 70%;
+    width: 70%;
+    border-radius: 50%;
+    margin-left:15%;
+}
+.lucky_userInfo{
+    position: absolute;
+    height:100px;
+    width:100px;
+    color:#fff;
+    font-size: 24px;
+}
+.lucky_list{
+    width:760px;
+    height:560px;
+    padding:20px;
+    position: relative;
+    margin:0 auto;
+    background-color: rgba(255, 255, 255, 0.2);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+.lpl_userInfo{
+    width:100px;
+    height:120px;
+    text-align: center;
+    float: left;
+    margin-bottom:10px;
+}
+.lpl_userImage{
+    width:60px;
+    height:60px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+._userName{
+    margin-top:12px;
+    display: block;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 10px;
+    color:#fff;
+
+}
+._userEnName{
+    margin-top:2px;
+    display: block;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 10px;
+    color:#fff;
+
+}
+
+.lpl_userName{
+    margin-top:12px;
+    display: block;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    font-size: 16px;
+    color:#fff;
+
+}
+.lpl_userEnName{
+    margin-top:5px;
+    display: block;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    font-size: 16px;
+    color:#fff;
+}
+.lucky_userName{
+    text-align: center;
+    margin-top:12px;
+    display: block;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+
+.lucky_userEnName{
+    text-align: center;
+    margin-top:5px;
+    display: block;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.lucky_title{
+    text-align: center;
+    width:100%;
+    font-size:40px;
+    font-weight: bold;
+    color:darkorange;
+    height:150px;
+    line-height: 150px;
+    background:url('../images/topbg.png') no-repeat center center;
+}
+.lucky_prize{
+    width:280px;
+}
+.lucky_people_list{
+    width:440px;
+    position: relative;
+    /*background-color: rgba(255, 255, 255, 0.2);*/
+    background: rgba(0, 0, 0, 0.2);
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+.lucky_prize_box{
+    height:200px;
+    display: flex;
+
+    flex-direction: row;
+}
+.lucky_prize_direction{
+/*    width:70px;
+    height:100%;
+    background-color: transparent;
+    border:none;
+    color:#fff;
+    font-size: 60px;
+    text-align: center;*/
+
+    width:50px;
+    height:100%;
+    background-color: transparent;
+    border:none;
+    color:#fff;
+    font-size: 60px;
+    text-align: center;
+
+}
+.lucky_prize_direction.active{
+    /*color:#f22;*/
+    
+}
+button:focus{
+    outline: none;
+}
+.lucky_prize_picture{
+    width:200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.lucky_prize_show{
+    max-width: 100%;
+    max-height:100%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.lucky_people_title_container{
+    width:100%;
+    height:60px;
+}
+.lucky_people_title_bg{
+    width:100%;
+    height:80px;
+     /*background-color: #f22;*/
+      font-size: 24px;
+    color:#fff;
+    text-align: center;
+    line-height: 60px;
+    font-weight: bold;
+    z-index: 10;
+    position: absolute;
+}
+
+.lucky_people_title{
+    width:100%;
+    height:60px;
+    /* background-origin:content;*/                /*从content区域开始显示背景*/  
+   /* background-position:50% 50%; */             /*图片上下左右居中*/  
+    /*background-size:contain; */               /*保持图像本身的宽高比例，将图片缩放到宽度或高度正好适应定义背景的区域*/  
+     /*background-color: #f22;*/
+    /*background-image:url('../images/banner.jpg') no-repeat  center center;*/
+    font-size: 24px;
+    color:#fff;
+    text-align: center;
+    line-height: 60px;
+    font-weight: bold;
+    z-index: 100;
+    position: absolute;
+}
+.lucky_setting{
+    /*height:50px;*/
+    /*background-color: #f22;*/
+     background-color: rgba(255, 255, 255, 0.2);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    color:#fff;
+    text-align: left;
+    line-height: 50px;
+    padding:0 10px;
+    font-weight: bold;
+    margin-top:25px;
+}
+.select_box{
+    float: bottom;
+    margin-top:1px;
+}
+.select_lucky_number{
+    font-size: 22px;
+    border:1px solid #eee;
+    outline: none;
+}
+.lucky_number{
+    font-size: 24px;
+}
+.lucky_prize_title{
+    height:50px;
+    /*background-color: #f22;*/
+    background-color: rgba(255, 255, 255, 0.2);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    color:#fff;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    margin-top:25px;
+}
+.lpl_list{
+    margin-top:20px;
+    height:480px;
+    overflow: auto;
+    box-sizing: border-box;
+}
+.loader_file{
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, .6);
+    z-index:999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+    font-size: 30px;
+}
+
+.none {
+    display: none;
+}
+
+@-webkit-keyframes glowing {
+    from {
+        -webkit-box-shadow: 0 0 0 rgba(255, 211, 0, 0.8);
+        box-shadow: 0 0 0 rgb(255, 132, 1);
+    }
+    50% {
+        -webkit-box-shadow: 0 0 20px rgba(219, 157, 12, 0.8);
+        box-shadow: 0 0 20px rgba(219, 12, 15, 0.8);
+    }
+    to {
+        -webkit-box-shadow: 0 0 0 rgba(219, 123, 25, 0.91);
+        box-shadow: 0 0 0 rgb(219, 113, 33);
+    }
+}
+
+@keyframes glowing {
+    from {
+        -webkit-box-shadow: 0 0 0 rgba(219, 97, 31, 0.3);
+        box-shadow: 0 0 0 rgb(219, 78, 30);
+    }
+    50% {
+        -webkit-box-shadow: 0 0 20px rgba(238, 133, 128, 0.8);
+        box-shadow: 0 0 20px rgba(255, 211, 0, 0.8);
+    }
+    to {
+        -webkit-box-shadow: 0 0 0 rgba(219, 78, 30, 0.3);
+        box-shadow: 0 0 0 rgba(238, 133, 128, 0.3);
+    }
+}
+
+.button-glow {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: glowing;
+    animation-name: glowing;
+}

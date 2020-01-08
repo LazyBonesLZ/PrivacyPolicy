@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Nexa & Moki 2018-2019 Annual meeting </title>
+    <link rel="stylesheet" href="css/luck_draw.css" media="screen" type="text/css">
+    <!-- <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.min.css"> -->
+</head>
+<body>
+<!-- 啥都不干，激活第一次加载bgm -->
+<iframe src="mp3/bgm.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+<audio id="bgm" autoplay="autoplay" loop="true">
+            <source src="mp3/bgm.mp3" />
+        </audio>
+<!-- <embed id="bgm1" src="mp3/bgm.mp3" autostart="true" loop="true" hidden="true" repeat="true"></embed> -->
+<!-- <audio src=""mp3/bgm.mp3" id="audio1" hidden="true" autoplay="true" loop="true" repeat="true"> -->
+
+</audio>
+<div class="container none"></div>
+<div class="container none"></div>
+<div class="mask"></div>
+<div id="stop" class="btn_circle button-glow none">Stop</div>
+<div class="lucky_title">Nexa & Moki 2020 Annual Party</div>
+<div class="loader_file">
+    Loading the user data... <span class="current_number"></span><span class="all_number"></span>
+</div>
+<div class="lucky_list clearfix">
+    <div class="left lucky_prize">
+        <div class="lucky_prize_box">
+            <button class="lucky_prize_left lucky_prize_direction">
+                <img id="btn_left" src="images/up_gray.png" width="50px" height="50px"/>
+            </button>
+            <div data-default="1" class="lucky_prize_picture">
+                <img class="none lucky_prize_show"
+                     src="images/3rd.png"
+                     alt="The 3rd Prize"/>
+                <img class="none lucky_prize_show"
+                     src="images/2nd-prize-png-8.png"
+                     alt="The 2nd Prize"/>
+                      <img class="lucky_prize_show none"
+                     src="images/lucky2.png"
+                     alt="Lucky Prize"/>
+                <img class="none lucky_prize_show"
+                     src="images/1st.png"
+                     alt="The 1st Prize"/>
+            </div>
+            <button class="lucky_prize_right active lucky_prize_direction">
+                <img img id="btn_right" src="images/next_red.png" width="50px" height="50px"/>
+            </button>
+        </div>
+        <div class="lucky_prize_title">The 3rd Prize</div>
+
+        <div class="lucky_setting">
+            <span>
+            This Round : 
+                <b class="lucky_number">99</b>
+              People in total
+            </span>
+            <div class="select_box">
+                Generate
+                <select name="select_lucky_number" class='select_lucky_number'>
+                    <option selected = "selected" value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                </select>
+                Each time
+            </div>
+        </div>
+        <div id="open" class="btn_circle btn_start button-glow" >Start</div>
+
+    </div>
+    <div class="right lucky_people_list">
+        <!-- <div class="lucky_people_title">List of winners (0/15)</div> -->
+        <div class="lucky_people_title_container">
+           <img src="images/banner.png" class="lucky_people_title_bg"></img>
+           <div class="lucky_people_title">List of winners (0/15)</div>
+        </div>
+       <!--  <img src="images/banner.png" class="lucky_people_title_bg"
+        alt="List of winners (0/15)"></img> -->
+        <div class="lpl_list clearfix none">
+        </div>
+        <div class="lpl_list clearfix none">
+        </div>
+        <div class="lpl_list clearfix none">
+        </div>
+        <div class="lpl_list clearfix none">
+
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src='js/transform.js'></script>
+<script type="text/javascript" src='js/tick.js'></script>
+<!--data为静态数据 如用ajax获取请取消输入引入-->
+<!--抽奖动画-->
+<script type="text/javascript" src='js/3d.js'></script>
+<!--实际抽奖逻辑代码-->
+<script type="text/javascript" src='js/lucky.js'></script>
+<!-- ajax抽奖逻辑 -->
+<script type="text/javascript" src="js/data.js"></script>
+<script type="text/javascript">     window.onbeforeunload = function() {
+    return "结果将会被清除，您确定退出吗？"; // return 这句必不可少
+}</script>
+
+        /<!-- / <script src="js/three.js"></script>
+        // <script src="js/tween.min.js"></script>
+        // <script src="js/TrackballControls.js"></script>
+        // <script src="js/CSS3DRenderer.js"></script>
+        // <script src="js/register.js"></script> -->
+
+</body>
+</html>
